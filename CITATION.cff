@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "Genotyping Primer Designer for Deletion"
+abstract: "Designs the genotyping PCR that separates a defined deletion from the unedited allele by product size, keeping both primers clear of the repair template's homology arms."
+type: software
+authors:
+  - family-names: "Takesue"
+    given-names: "Hiroaki"
+    orcid: "https://orcid.org/0000-0001-8585-5494"
+version: 0.1.0
+license: MIT
+repository-code: "https://github.com/takeisue1270/Genotyping_Primer_Designer_for_Deletion"
+url: "https://github.com/takeisue1270/Genotyping_Primer_Designer_for_Deletion"
+keywords:
+  - genotyping
+  - PCR primers
+  - CRISPR
+  - knockout
+  - deletion
+  - screening

@@ -1,0 +1,49 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "genotyping-primer-designer"
+version = "0.1.0"
+description = "Design the genotyping PCR that separates a defined deletion from the unedited allele by product size, keeping both primers clear of the repair template's homology arms."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Hiroaki Takesue" }]
+keywords = [
+    "genotyping", "PCR primers", "CRISPR", "knockout", "deletion", "screening",
+    "GenBank", "Ensembl", "GGGenome", "plasmid",
+]
+classifiers = [
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Topic :: Scientific/Engineering :: Bio-Informatics",
+]
+dependencies = [
+    "numpy>=1.24",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=7.4", "ruff>=0.4"]
+
+[project.scripts]
+genotyping-primers = "genotyping_primers.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/takeisue1270/Genotyping_Primer_Designer_for_Deletion"
+Issues = "https://github.com/takeisue1270/Genotyping_Primer_Designer_for_Deletion/issues"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+markers = ["network: test requires internet access"]
+
+[tool.ruff]
+line-length = 100
+src = ["src", "tests"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
