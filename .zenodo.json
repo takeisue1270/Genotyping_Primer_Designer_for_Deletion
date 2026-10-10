@@ -1,0 +1,23 @@
+{
+  "title": "Genotyping Primer Designer for Deletion",
+  "upload_type": "software",
+  "description": "<p>Designs the genotyping PCR that separates a defined deletion from the unedited allele by product size. Both primers are kept clear of the repair template's homology arms, both product sizes are measured from the sequences themselves, and specificity is checked genome-wide through GGGenome, against a local FASTA, or within the supplied sequence.</p>",
+  "license": "mit-license",
+  "access_right": "open",
+  "version": "v0.1.0",
+  "creators": [
+    {
+      "name": "Takesue, Hiroaki",
+      "orcid": "0000-0001-8585-5494"
+    }
+  ],
+  "keywords": [
+    "genotyping",
+    "PCR primers",
+    "CRISPR",
+    "knockout",
+    "deletion",
+    "screening"
+  ],
+  "related_identifiers": []
+}
